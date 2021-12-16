@@ -1,1 +1,1 @@
-SQL commands to generate initial skinny tables
+SQL commands used generate initial skinny tables
