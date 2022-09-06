@@ -3,22 +3,32 @@ import numpy
 import chunkerClass
 import pandas as pd
 
+# initialize with number of stripes and overlap in arcsecs
+# stripes cover 180 degrees in latitude, so 36 stripes is equivalent to 5 degree chunking
+
 chunker=chunkerClass.chunker(36,20/3600)
 
 chunker.show()
 
+# find neighbours for a given chunkid
 
 neighbours=chunker.getNeighbours(0)
 print(neighbours)
-npa=chunker.getTestPoints()
-print(npa)
-chunker.plot()
-DF = pd.DataFrame(npa)
-DF.to_csv("data.csv",index=False,header=None)
 neighbours=chunker.getNeighbours(1041)
 print(neighbours)
-print(chunker.getChunkBounds(1041),chunker.alphaStripe[chunker.getStripe(1041)])
-print(chunker.getChunkBounds(969),chunker.alphaStripe[chunker.getStripe(969)])
+
+# get an array of RA/Decs of corners and centres of each chunk.
+
+npa=chunker.getTestPoints()
+print(npa)
+DF = pd.DataFrame(npa)
+DF.to_csv("data.csv",index=False,header=None)
+
+# show a plot of chunks
+
+chunker.plot()
+
+# get a count of neighbours for every chunk
 
 neghbourCounts=[]
 for s in range(0, chunker.numStripes):
@@ -26,6 +36,7 @@ for s in range(0, chunker.numStripes):
         n=chunker.getNeighbours(chunker.getChunkId(s, c))
         neghbourCounts.append((chunker.getChunkId(s, c),len(n)))
         if len(n)==7:
+            #show ones with 7 neighbours
             print(chunker.getChunkId(s, c),len(n))
 neighbourArray=numpy.asarray(neghbourCounts,dtype='i,i')
 #print(neighbourArray)
