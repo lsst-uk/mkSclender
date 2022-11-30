@@ -111,7 +111,7 @@ for csv_chunk in pd.read_csv('/mnt/ramses25/mar/catwiseSkinnyish.csv', header=No
             for i in range(0, 2):
                 if (row.sigra <=0 or row.sigdec <=0 or math.isnan(row.sigra) or math.isnan(row.sigdec)) :
                     flag[i]=-999
-                    include-False
+                    include=False
                     conds[i]=1
                     reasons[1,i] +=1
                 elif (row.ab_flags[i] != "0") :

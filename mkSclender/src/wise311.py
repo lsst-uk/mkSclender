@@ -114,7 +114,7 @@ for csv_chunk in pd.read_csv('/mnt/ramses19/mar/wiseSkinnyish.csv', header=None,
                     reasons[1,i] +=1
                 elif (row.sigra <=0 or row.sigdec <=0 or math.isnan(row.sigra) or math.isnan(row.sigdec)) :
                     flag[i]=-999
-                    include-False
+                    include=False
                     conds[i]=2
                     reasons[2,i] +=1
                 elif (row.ph_qual[i]=="U" or row.ph_qual[i]=="X" or row.ph_qual[i]=="Z") :
