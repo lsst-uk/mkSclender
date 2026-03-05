@@ -1,6 +1,6 @@
 # GAIADR3 - generating skinny tables for cross-match input
 
-## Preperation
+## Preparation
 
 The input for the flagging was created running a bulk outgest on the gaia_source table in the GAIADR3 database held in the WFAU archives
 The SQL is shown in [gaiaDR3Outgest.sql](gaiaDR3Outgest.sql)
