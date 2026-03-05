@@ -7,5 +7,5 @@ The SQL is shown in [gaiaDR3Outgest.sql](gaiaDR3Outgest.sql)
 
 ## Skinny table flagging
 
-The flagging described in [gaia_dr3.pdf](gaia_dr3.pdf) was then implemneted via [gaiaDR3311.py](gaiaDR3311.py). The qserv partitioned was then used to chunk this
+The flagging described in [gaia_dr3.pdf](gaia_dr3.pdf) was then implemneted via [gaiaDR3311.py](gaiaDR3311.py). The qserv partitioner was then used to chunk this
 output.
