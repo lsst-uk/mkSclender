@@ -1,0 +1,42 @@
+{
+        "id": "pts_key",
+        "pos": [
+                "ra,dec"
+        ],
+        "part": {
+                "pos": "ra, dec",
+                "num-stripes": 36,
+                "num-sub-stripes": 1,
+                "chunk": "chunkId",
+                "sub-chunk": "subChunkId",
+                "overlap": 0.005556
+        },
+        "out": {
+                "csv": {
+                        "null": "",
+                        "delimiter": ",",
+                        "escape": "\\",
+                    "no-quote": true,
+		    "field": [
+"source_id","designation","ra","dec","sig_avg","mag0","mag1","mag2","bestIndex","bp_mean_flux_over_error","g_mean_flux_over_error","rp_mean_flux_over_error","pmra","pmdec","sig_avg_pm"
+                        ]
+
+                }
+        },
+        "in": {
+                "csv": {
+                        "null": "",
+                        "delimiter": ",",
+                        "escape": "\\",
+                    "field": [
+"source_id","designation","ra","dec","sig_avg","mag0","mag1","mag2","bestIndex","bp_mean_flux_over_error","g_mean_flux_over_error","rp_mean_flux_over_error","pmra","pmdec","sig_avg_pm","hpi","bestFlag","flag0","flag1","flag2","ora","odec","omag0","omag1","omag2"
+                        ]
+                }
+        }
+}
+#'cntr','designation','ra','dec','sig_avg','w1mag','w2mag','bestIndex','w1snr','w2snr','w1sigmpro','w2sigmpro','hpi','bestFlag',,'flag0','flag1','o1mag','o2mag'
+
+    #213567974645319936,Gaia EDR3 213567974645319936  ,83.249425701,50.01874386,1.45568811,,20.9159,20.3885,2,24279,2,-1,2,2,83.249425701,50.01874386,21.2531,20.9159,20.3885
+#row.object_id,useRA,useDec,sig_avg,mags[0],mags[1],mags[2],mags[3],mags[4],bestPhotBand,maxPhotFlag,photFlags[0],photFlags[1],photFlags[2],photFlags[3],photFlags[4]])
+
+# "designation","ra","dec","sig_avg","mag0","mag1","mag2","bestIndex","jdate","magErr0","magErr1","magErr2","pts_key","bestFlag","pf0","pf1","pf2"

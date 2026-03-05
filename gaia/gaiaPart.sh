@@ -1,0 +1,1 @@
+sph-partition --config-file=/disk85/hips/gaiadr3/gaiaPart.json  --in.path=/unas/mar/gaiaDR3GoodPMERR.csv --mr.num-workers=2  --mr.pool-size=4096 --mr.block-size=16  --verbose --out.dir=/disk85/hips/gaiadr3/chunksPMERR/ >> part.out
