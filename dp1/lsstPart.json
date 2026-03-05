@@ -1,0 +1,35 @@
+{
+        "id": "object_id",
+        "pos": [
+                "ra,dec"
+        ],
+        "part": {
+                "pos": "ra, dec",
+                "num-stripes": 36,
+                "num-sub-stripes": 1,
+                "chunk": "chunkId",
+                "sub-chunk": "subChunkId",
+                "overlap": 0.005556
+        },
+        "out": {
+                "csv": {
+                        "null": "",
+                        "delimiter": ",",
+                        "escape": "\\",
+                    "no-quote": true,
+		    "field": ["objectId","ra","dec","sig_avg","mag0","mag1","mag2","mag3","mag4","mag5","bestIndex","epoch","snr0","snr1","snr2","snr3","snr4","snr5","magErr0","magErr1","magErr2","magErr3","magErr4","magErr5"
+]
+		    
+                }
+        },
+        "in": {
+                "csv": {
+                        "null": "",
+                        "delimiter": ",",
+                        "escape": "\\",
+                    "field": [
+			"objectId","ra","dec","sig_avg","mag0","mag1","mag2","mag3","mag4","mag5","bestIndex","epoch","snr0","snr1","snr2","snr3","snr4","snr5","magErr0","magErr1","magErr2","magErr3","magErr4","magErr5","bestFlag","pf0","pf1","pf2","pf3","pf4","pf5"
+                        ]
+                }
+        }
+}
