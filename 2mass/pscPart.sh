@@ -1,0 +1,2 @@
+sph-partition --config-file=/disk85/hips/2MASS/pscPart.json  --in.path=pscGoodSNRNan.csv --mr.num-workers=2  --mr.pool-size=4096 --mr.block-size=16  --verbose --out.dir=/disk85/hips/2MASS/chunksSNRNan/ >> part.out
+#sph-partition --config-file=/disk85/hips/2MASS/pscPart.json  --in.path=pscGood.csv --mr.num-workers=2  --mr.pool-size=4096 --mr.block-size=16  --verbose --out.dir=/disk85/hips/2MASS/chunks/ >> part.out
