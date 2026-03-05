@@ -11,4 +11,4 @@ As DP1 is small the full table was outgested into 50 CSV files (select * from Ob
 
 ## Skinny table flagging
 
-The flagging described in [lsst_dp1.pdf](lsst_dp1.pdf) was then implemneted via [lsst311.py]
+The flagging described in [lsst_dp1.pdf](lsst_dp1.pdf) was then implemneted via [lsst311.py](lsst311.py)
